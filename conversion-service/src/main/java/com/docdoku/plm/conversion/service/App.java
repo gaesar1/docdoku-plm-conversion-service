@@ -85,7 +85,7 @@ public class App {
         String userToken = conversionOrder.getUserToken();
 
         if (null == converter) {
-            sendError(userToken, partIterationKey, "No CAD converter able to handle " + cadBinaryResource.getName());
+            LOGGER.log(Level.WARNING,"No CAD converter able to handle " + cadBinaryResource.getName());
             return;
         }
 

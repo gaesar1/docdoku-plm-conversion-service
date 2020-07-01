@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-#docker build --build-arg USERID=$(id -u) --build-arg GROUPID=$(id -g) -f Dockerfile.cpp -t docdokuplm/openjdk8-gcc . && \
+IMAGE_NAME=docdoku/docdoku-plm-conversion-service
+VERSION=$(mvn -q -N org.codehaus.mojo:exec-maven-plugin:3.0.0:exec \
+    -Dexec.executable='echo' \
+    -Dexec.args='${project.version}')
+
 mvn clean install && \
-docker build -f Dockerfile.jvm -t docdoku/docdoku-plm-conversion-service .
+docker build -f Dockerfile.jvm -t $IMAGE_NAME:latest .
+docker tag $IMAGE_NAME:latest $IMAGE_NAME:$VERSION
