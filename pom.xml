@@ -6,7 +6,7 @@
 
     <groupId>com.docdoku.plm</groupId>
     <artifactId>conversion-service-pom</artifactId>
-    <version>2.6.0</version>
+    <version>2.6.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>DocDokuPLM conversion service</name>
