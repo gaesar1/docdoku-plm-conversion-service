@@ -11,11 +11,11 @@
 
 package com.docdoku.plm.conversion.service;
 
-import com.docdoku.api.models.ConversionResultDTO;
-import com.docdoku.api.models.PositionDTO;
+import com.docdoku.plm.api.models.ConversionResultDTO;
+import com.docdoku.plm.api.models.PositionDTO;
 import org.dozer.DozerConverter;
-import org.polarsys.eplmp.core.product.ConversionResult;
-import org.polarsys.eplmp.server.converters.ConversionResultProxy;
+import com.docdoku.plm.server.core.product.ConversionResult;
+import com.docdoku.plm.server.converters.ConversionResultProxy;
 
 import java.nio.file.Path;
 import java.util.*;

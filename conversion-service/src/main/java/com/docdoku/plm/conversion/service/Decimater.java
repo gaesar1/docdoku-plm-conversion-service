@@ -1,6 +1,6 @@
 package com.docdoku.plm.conversion.service;
 
-import org.polarsys.eplmp.server.converters.ConverterUtils;
+import com.docdoku.plm.server.converters.ConverterUtils;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

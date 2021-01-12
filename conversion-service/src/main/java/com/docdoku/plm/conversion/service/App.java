@@ -1,25 +1,25 @@
 package com.docdoku.plm.conversion.service;
 
 
-import com.docdoku.api.DocDokuPLMClientFactory;
-import com.docdoku.api.client.ApiClient;
-import com.docdoku.api.client.ApiException;
-import com.docdoku.api.models.ConversionResultDTO;
-import com.docdoku.api.services.PartApi;
+import com.docdoku.plm.api.DocDokuPLMClientFactory;
+import com.docdoku.plm.api.client.ApiClient;
+import com.docdoku.plm.api.client.ApiException;
+import com.docdoku.plm.api.models.ConversionResultDTO;
+import com.docdoku.plm.api.services.PartApi;
 import io.quarkus.runtime.ShutdownEvent;
 import io.quarkus.runtime.StartupEvent;
 import org.dozer.DozerBeanMapperSingletonWrapper;
 import org.dozer.Mapper;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
-import org.polarsys.eplmp.core.common.BinaryResource;
-import org.polarsys.eplmp.core.exceptions.FileNotFoundException;
-import org.polarsys.eplmp.core.exceptions.StorageException;
-import org.polarsys.eplmp.core.product.PartIterationKey;
-import org.polarsys.eplmp.core.util.FileIO;
-import org.polarsys.eplmp.core.util.Tools;
-import org.polarsys.eplmp.server.converters.CADConverter;
-import org.polarsys.eplmp.server.converters.ConversionOrder;
-import org.polarsys.eplmp.server.converters.ConversionResultProxy;
+import com.docdoku.plm.server.core.common.BinaryResource;
+import com.docdoku.plm.server.core.exceptions.FileNotFoundException;
+import com.docdoku.plm.server.core.exceptions.StorageException;
+import com.docdoku.plm.server.core.product.PartIterationKey;
+import com.docdoku.plm.server.core.util.FileIO;
+import com.docdoku.plm.server.core.util.Tools;
+import com.docdoku.plm.server.converters.CADConverter;
+import com.docdoku.plm.server.converters.ConversionOrder;
+import com.docdoku.plm.server.converters.ConversionResultProxy;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;

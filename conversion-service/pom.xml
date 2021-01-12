@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.docdoku</groupId>
+        <groupId>com.docdoku.plm</groupId>
         <version>2.6.0-SNAPSHOT</version>
         <artifactId>conversion-service-pom</artifactId>
     </parent>
@@ -43,12 +43,12 @@
             <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.polarsys.eplmp</groupId>
-            <artifactId>eplmp-server-ext</artifactId>
+            <groupId>com.docdoku.plm</groupId>
+            <artifactId>docdoku-plm-server-ext</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.docdoku</groupId>
-            <artifactId>docdoku-api-java</artifactId>
+            <groupId>com.docdoku.plm</groupId>
+            <artifactId>docdoku-plm-api-java</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>jakarta.xml.bind</groupId>
