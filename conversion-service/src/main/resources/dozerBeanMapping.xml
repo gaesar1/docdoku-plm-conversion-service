@@ -7,8 +7,8 @@
     <configuration>
         <custom-converters>
             <converter type="com.docdoku.plm.conversion.service.ConversionResultDozerConverter" >
-                <class-a>org.polarsys.eplmp.server.converters.ConversionResultProxy</class-a>
-                <class-b>com.docdoku.api.models.ConversionResultDTO</class-b>
+                <class-a>com.docdoku.plm.server.converters.ConversionResultProxy</class-a>
+                <class-b>com.docdoku.plm.api.models.ConversionResultDTO</class-b>
             </converter>
         </custom-converters>
     </configuration>

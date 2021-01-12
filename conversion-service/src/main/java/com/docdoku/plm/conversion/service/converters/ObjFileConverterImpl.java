@@ -2,8 +2,8 @@
 package com.docdoku.plm.conversion.service.converters;
 
 
-import org.polarsys.eplmp.server.converters.CADConverter;
-import org.polarsys.eplmp.server.converters.ConversionResultProxy;
+import com.docdoku.plm.server.converters.CADConverter;
+import com.docdoku.plm.server.converters.ConversionResultProxy;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.net.URI;

@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.docdoku</groupId>
+    <groupId>com.docdoku.plm</groupId>
     <artifactId>conversion-service-pom</artifactId>
     <version>2.6.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -39,13 +39,13 @@
                 <version>4.12</version>
             </dependency>
             <dependency>
-                <groupId>org.polarsys.eplmp</groupId>
-                <artifactId>eplmp-server-ext</artifactId>
+                <groupId>com.docdoku.plm</groupId>
+                <artifactId>docdoku-plm-server-ext</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.docdoku</groupId>
-                <artifactId>docdoku-api-java</artifactId>
+                <groupId>com.docdoku.plm</groupId>
+                <artifactId>docdoku-plm-api-java</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

@@ -5,8 +5,9 @@ import javax.inject.Singleton;
 @Singleton
 public
 class ConversionServiceConfig {
-    String getEPLMPHost(){
-        return System.getProperty("EPLMP_ENDPOINT","http://back:8080/eplmp-server-rest/api");
+
+    String getHost(){
+        return System.getProperty("ENDPOINT","http://back:8080/docdoku-plm-server-rest/api");
     }
 
     String getVaultPath(){
